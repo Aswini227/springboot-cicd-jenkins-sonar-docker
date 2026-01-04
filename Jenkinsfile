@@ -2,9 +2,9 @@ pipeline {
     agent any
 
     environment {
-        SONAR_URL = "http://65.0.68.201:9000"
-        DOCKER_IMAGE = "aswini227/demo:${BUILD_NUMBER}"
-    }
+    SONAR_URL = "http://65.0.68.201:9000"
+    DOCKER_IMAGE = "ashcreatingdocker/demo:${BUILD_NUMBER}"
+}
 
     stages {
         stage('Checkout') {
